@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pokémon</title>
+    <!-- Incluye los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Incluye la biblioteca jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Incluye los archivos JavaScript de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Tu estilo personalizado aquí -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            margin: 10px; /* Reducción de los márgenes */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .game {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            float: left;
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            clear: both;
+            margin-top: 20px; /* Mover el pie de página hacia abajo */
+        }
+
+        aside {
+            /* Instrucción a: Hacer uso del modelo de caja y posición en CSS en la página web */
+            float: right;
+            width: 20%;
+            background-color: #f2f2f2;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 20px; /* Mover la barra lateral hacia abajo */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+
+    <!-- Agrega aquí el contenido de tu página -->
+
+</body>
+</html>
+
+<style>
+    /* Estilo para el contenedor de la generación */
+    .gen-container {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para el texto de la descripción */
+    .gen-description {
+        margin: 10px 0;
+        padding: 10px;
+        border-left: 2px solid #007bff; /* Borde izquierdo con color */
+        background-color: #fff; /* Color de fondo */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra solo para el texto */
+    }
+
+    /* Estilos para las tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Borde de tabla colapsado */
+    }
+
+    table, th, td {
+        border: 1px solid #ddd; /* Bordes de tabla */
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Estilos para las filas impares de la tabla */
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+   </style>
+
+<header>
+    <h1>Explorando Pokémon Rojo y Azul / Página de Juegos</h1>
+</header>
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#pokedex">Pokedex</a><!-- Pestaña de la Pokedex -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#pokemones">medallas</a><!-- Pestaña de Pokémon Iniciales -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#juegos">Juegos</a><!-- Pestaña de Juegos -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#contacto">Contacto</a><!-- Pestaña de Contacto -->
+        </li>
+    </ul>
+</nav>
+<section class="tab-content">
+    <div class="tab-pane active" id="inicio">
+        <!-- Contenido de la sección Inicio -->
+        <h2>Bienvenido a la Página de Pokémon Rojo y Azul</h2>
+        <p>En esta página, encontrarás información sobre los juegos Pokémon Rojo y Azul, así como detalles sobre los Pokémon iniciales, juegos relacionados y cómo contactarnos.</p>
+ <h2>Pokémon Iniciales de la Primera Generación</h2>
+        <table>
+            <tr>
+                <th>Pokémon</th>
+                <th>Tipo</th>
+                <th>Enlace Interno</th>
+                <th>Enlace Externo</th>
+            </tr>
+            <tr>
+                <td><a href="bulbasaur.html">Bulbasaur</a></td>
+                <td>Planta/Veneno</td>
+                <td><a href="bulbasaur.html">Detalles</a></td>
+                <td><a href="https://pokemon.fandom.com/es/wiki/Bulbasaur" target="_blank">Más Info</a></td>
+            </tr>
+            <tr>
+                <td><a href="charmander.html">Charmander</a></td>
+                <td class="charmander-details">Fuego</td>
+                <td><a href="charmander.html">Detalles</a></td>
+                <td><a href="https://pokemon.fandom.com/es/wiki/Charmander" target="_blank">Más Info</a></td>
+            </tr>
+            <tr>
+                <td><a href="squirtle.html">Squirtle</a></td>
+                <td>Agua</td>
+                <td><a href="squirtle.html">Detalles</a></td>
+                <td><a href="https://pokemon.fandom.com/es/wiki/Squirtle" target="_blank">Más Info</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tab-pane" id="pokedex">
+        <!-- Contenido de la Pokedex -->
+        <h2>Pokedex</h2>
+        <p>Aquí encontrarás información sobre los Pokémon de la región.</p>
+        <table>
+    <tr>
+        <th>Número en la Pokédex</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Evoluciones</th>
+        <th>Ubicación</th>
+    </tr>
+    <tr>
+        <td>#001</td>
+        <td>Bulbasaur</td>
+        <td>Planta/Veneno</td>
+        <td>Bulbasaur (nivel 16) - Ivysaur (nivel 32) - Venusaur</td>
+        <td>Inicial (elige al principio del juego)</td>
+    </tr>
+    <tr>
+        <td>#002</td>
+        <td>Ivysaur</td>
+        <td>Planta/Veneno</td>
+        <td>Ivysaur (nivel 32) - Venusaur</td>
+        <td>Evolución de Bulbasaur</td>
+    </tr>
+    <tr>
+        <td>#003</td>
+        <td>Venusaur</td>
+        <td>Planta/Veneno</td>
+        <td></td>
+        <td>Evolución de Ivysaur</td>
+    </tr>
+    <tr>
+        <td>#004</td>
+        <td>Charmander</td>
+        <td>Fuego</td>
+        <td>Charmander (nivel 16) - Charmeleon (nivel 36) - Charizard</td>
+        <td>Inicial (elige al principio del juego)</td>
+    </tr>
+    <tr>
+        <td>#005</td>
+        <td>Charmeleon</td>
+        <td>Fuego</td>
+        <td>Charmeleon (nivel 36) - Charizard</td>
+        <td>Evolución de Charmander</td>
+    </tr>
+    <tr>
+        <td>#006</td>
+        <td>Charizard</td>
+        <td>Fuego/Volador</td>
+        <td></td>
+        <td>Evolución de Charmeleon</td>
+    </tr>
+    <tr>
+        <td>#007</td>
+        <td>Squirtle</td>
+        <td>Agua</td>
+        <td>Squirtle (nivel 16) - Wartortle (nivel 36) - Blastoise</td>
+        <td>Inicial (elige al principio del juego)</td>
+    </tr>
+    <tr>
+        <td>#008</td>
+        <td>Wartortle</td>
+        <td>Agua</td>
+        <td>Wartortle (nivel 36) - Blastoise</td>
+        <td>Evolución de Squirtle</td>
+    </tr>
+    <tr>
+        <td>#009</td>
+        <td>Blastoise</td>
+        <td>Agua</td>
+        <td></td>
+        <td>Evolución de Wartortle</td>
+    </tr>
+    <tr>
+        <td>#010</td>
+        <td>Caterpie</td>
+        <td>Bicho</td>
+        <td>Caterpie (nivel 7) - Metapod (nivel 10) - Butterfree</td>
+        <td>Ruta 2, Bosque Verde (encontrar a Metapod)</td>
+    </tr>
+    <tr>
+        <td>#011</td>
+        <td>Metapod</td>
+        <td>Bicho</td>
+        <td>Metapod (nivel 10) - Butterfree</td>
+        <td>Evolución de Caterpie</td>
+    </tr>
+    <tr>
+        <td>#012</td>
+        <td>Butterfree</td>
+        <td>Bicho/Volador</td>
+        <td></td>
+        <td>Evolución de Metapod</td>
+    </tr>
+    <tr>
+        <td>#013</td>
+        <td>Weedle</td>
+        <td>Bicho/Veneno</td>
+        <td>Weedle (nivel 7) - Kakuna (nivel 10) - Beedrill</td>
+        <td>Ruta 2</td>
+    </tr>
+    <tr>
+        <td>#014</td>
+        <td>Kakuna</td>
+        <td>Bicho/Veneno</td>
+        <td>Kakuna (nivel 10) - Beedrill</td>
+        <td>Evolución de Weedle</td>
+    </tr>
+    <tr>
+        <td>#015</td>
+        <td>Beedrill</td>
+        <td>Bicho/Veneno</td>
+        <td></td>
+        <td>Evolución de Kakuna</td>
+    </tr>
+    <tr>
+        <td>#016</td>
+        <td>Pidgey</td>
+        <td>Normal/Volador</td>
+        <td>Pidgey (nivel 18) - Pidgeotto (nivel 36) - Pidgeot</td>
+        <td>Rutas 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15</td>
+    </tr>
+    <tr>
+        <td>#017</td>
+        <td>Pidgeotto</td>
+        <td>Normal/Volador</td>
+        <td>Pidgeotto (nivel 36) - Pidgeot</td>
+        <td>Evolución de Pidgey</td>
+    </tr>
+    <tr>
+        <td>#018</td>
+        <td>Pidgeot</td>
+        <td>Normal/Volador</td>
+        <td></td>
+        <td>Evolución de Pidgeotto</td>
+    </tr>
+    <tr>
+        <td>#019</td>
+        <td>Rattata</td>
+        <td>Normal</td>
+        <td>Rattata (nivel 20) - Raticate</td>
+        <td>Rutas 1, 2, 4, 9, 16, 18, 22, 24, 25, 26, 27, 28</td>
+    </tr>
+    <tr>
+        <td>#020</td>
+        <td>Raticate</td>
+        <td>Normal</td>
+        <td></td>
+        <td>Evolución de Rattata</td>
+    </tr>
+    <tr>
+        <td>#021</td>
+        <td>Spearow</td>
+        <td>Normal/Volador</td>
+        <td>Spearow (nivel 20) - Fearow</td>
+        <td>Rutas 3, 4, 9, 10, 11, 16, 17, 18, 23</td>
+    </tr>
+    <tr>
+        <td>#022</td>
+        <td>Fearow</td>
+        <td>Normal/Volador</td>
+        <td></td>
+        <td>Evolución de Spearow</td>
+    </tr>
+    <tr>
+        <td>#023</td>
+        <td>Ekans</td>
+        <td>Veneno</td>
+        <td>Ekans (nivel 22) - Arbok</td>
+        <td>Mansión Pokémon, Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#024</td>
+        <td>Arbok</td>
+        <td>Veneno</td>
+        <td></td>
+        <td>Evolución de Ekans</td>
+    </tr>
+    <tr>
+        <td>#025</td>
+        <td>Pikachu</td>
+        <td>Eléctrico</td>
+        <td>Pikachu (felicidad) - Raichu (usando Piedra Trueno)</td>
+        <td>Zona de la Cueva de Cerulean, Safari de la Zona 2</td>
+    </tr>
+    <tr>
+        <td>#026</td>
+        <td>Raichu</td>
+        <td>Eléctrico</td>
+        <td></td>
+        <td>Evolución de Pikachu (usando Piedra Trueno)</td>
+    </tr>
+    <tr>
+        <td>#027</td>
+        <td>Sandshrew</td>
+        <td>Tierra</td>
+        <td>Sandshrew (nivel 22) - Sandslash</td>
+        <td>Ruta 3, Ruta 4, Ruta 9</td>
+    </tr>
+    <tr>
+        <td>#028</td>
+        <td>Sandslash</td>
+        <td>Tierra</td>
+        <td></td>
+        <td>Evolución de Sandshrew</td>
+    </tr>
+    <tr>
+        <td>#029</td>
+        <td>Nidoran♀</td>
+        <td>Veneno</td>
+        <td>Nidoran♀ (nivel 16) - Nidorina (usando Piedra Lunar) - Nidoqueen</td>
+        <td>Rutas 3, 4, 5, 6, 7, 8, 9, 10, 11, 22, 23, 24, 25, 26, 27, 28</td>
+    </tr>
+    <tr>
+        <td>#030</td>
+        <td>Nidorina</td>
+        <td>Veneno</td>
+        <td>Nidorina (usando Piedra Lunar) - Nidoqueen</td>
+        <td>Evolución de Nidoran♀</td>
+    </tr>
+    <tr>
+        <td>#031</td>
+        <td>Nidoqueen</td>
+        <td>Veneno/Tierra</td>
+        <td></td>
+        <td>Evolución de Nidorina</td>
+    </tr>
+    <tr>
+        <td>#032</td>
+        <td>Nidoran♂</td>
+        <td>Veneno</td>
+        <td>Nidoran♂ (nivel 16) - Nidorino (usando Piedra Lunar) - Nidoking</td>
+        <td>Rutas 22, 23, Safari de la Zona 1, Safari de la Zona 2</td>
+    </tr>
+    <tr>
+        <td>#033</td>
+        <td>Nidorino</td>
+        <td>Veneno</td>
+        <td>Nidorino (usando Piedra Lunar) - Nidoking</td>
+        <td>Evolución de Nidoran♂</td>
+    </tr>
+    <tr>
+        <td>#034</td>
+        <td>Nidoking</td>
+        <td>Veneno/Tierra</td>
+        <td></td>
+        <td>Evolución de Nidorino</td>
+    </tr>
+    <tr>
+        <td>#035</td>
+        <td>Clefairy</td>
+        <td>Hada</td>
+        <td>Clefairy (felicidad) - Clefable (usando Piedra Lunar)</td>
+        <td>Montaña Luna (no en Rojo Fuego, debes comerciar con Verde Hoja)</td>
+    </tr>
+    <tr>
+        <td>#036</td>
+        <td>Clefable</td>
+        <td>Hada</td>
+        <td></td>
+        <td>Evolución de Clefairy (usando Piedra Lunar)</td>
+    </tr>
+    <tr>
+        <td>#037</td>
+        <td>Vulpix</td>
+        <td>Fuego</td>
+        <td>Vulpix (usando Piedra Fuego) - Ninetales</td>
+        <td>Mansión Pokémon, Isla Canela (no en Rojo Fuego, debes comerciar con Verde Hoja)</td>
+    </tr>
+    <tr>
+        <td>#038</td>
+        <td>Ninetales</td>
+        <td>Fuego</td>
+        <td></td>
+        <td>Evolución de Vulpix (usando Piedra Fuego)</td>
+    </tr>
+    <tr>
+        <td>#039</td>
+        <td>Jigglypuff</td>
+        <td>Normal/Hada</td>
+        <td>Jigglypuff (felicidad) - Wigglytuff (usando Piedra Lunar)</td>
+        <td>Zona del Casino, Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#040</td>
+        <td>Wigglytuff</td>
+        <td>Normal/Hada</td>
+        <td></td>
+        <td>Evolución de Jigglypuff (usando Piedra Lunar)</td>
+    </tr>
+    <tr>
+        <td>#041</td>
+        <td>Zubat</td>
+        <td>Veneno/Volador</td>
+        <td>Zubat (nivel 22) - Golbat</td>
+        <td>Cueva Celeste, Cueva Granizada, Isla Inta</td>
+    </tr>
+    <tr>
+        <td>#042</td>
+        <td>Golbat</td>
+        <td>Veneno/Volador</td>
+        <td></td>
+        <td>Evolución de Zubat</td>
+    </tr>
+    <tr>
+        <td>#043</td>
+        <td>Oddish</td>
+        <td>Planta/Veneno</td>
+        <td>Oddish (nivel 21) - Gloom (usando Piedra Solar) - Vileplume</td>
+        <td>Rutas 5, 6, 24, 25, Zona del Casino</td>
+    </tr>
+    <tr>
+        <td>#044</td>
+        <td>Gloom</td>
+        <td>Planta/Veneno</td>
+        <td>Gloom (usando Piedra Solar) - Vileplume</td>
+        <td>Evolución de Oddish</td>
+    </tr>
+    <tr>
+        <td>#045</td>
+        <td>Vileplume</td>
+        <td>Planta/Veneno</td>
+        <td></td>
+        <td>Evolución de Gloom (usando Piedra Solar)</td>
+    </tr>
+    <tr>
+        <td>#046</td>
+        <td>Paras</td>
+        <td>Bicho/Planta</td>
+        <td>Paras (nivel 24) - Parasect</td>
+        <td>Zona del Casino, Safari de la Zona 1</td>
+    </tr>
+    <tr>
+        <td>#047</td>
+        <td>Parasect</td>
+        <td>Bicho/Planta</td>
+        <td></td>
+        <td>Evolución de Paras</td>
+    </tr>
+    <tr>
+        <td>#048</td>
+        <td>Venonat</td>
+        <td>Bicho/Veneno</td>
+        <td>Venonat (nivel 31) - Venomoth</td>
+        <td>Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#049</td>
+        <td>Venomoth</td>
+        <td>Bicho/Veneno</td>
+        <td></td>
+        <td>Evolución de Venonat</td>
+    </tr>
+    <tr>
+        <td>#050</td>
+        <td>Diglett</td>
+        <td>Tierra</td>
+        <td>Diglett (nivel 26) - Dugtrio</td>
+        <td>Ruta 2, Cueva Celeste, Cueva Granizada</td>
+    </tr>
+
+<table>
+    <tr>
+        <th>Número en la Pokédex</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Evoluciones</th>
+        <th>Ubicación</th>
+    </tr>
+    <tr>
+        <td>#051</td>
+        <td>Dugtrio</td>
+        <td>Tierra</td>
+        <td></td>
+        <td>Evolución de Diglett</td>
+    </tr>
+    <tr>
+        <td>#052</td>
+        <td>Meowth</td>
+        <td>Normal</td>
+        <td>Meowth (nivel 28) -> Persian</td>
+        <td>Rutas 5, 6, 7, 8</td>
+    </tr>
+    <tr>
+        <td>#053</td>
+        <td>Persian</td>
+        <td>Normal</td>
+        <td></td>
+        <td>Evolución de Meowth</td>
+    </tr>
+    <tr>
+        <td>#054</td>
+        <td>Psyduck</td>
+        <td>Agua</td>
+        <td>Psyduck (nivel 33) -> Golduck</td>
+        <td>Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#055</td>
+        <td>Golduck</td>
+        <td>Agua</td>
+        <td></td>
+        <td>Evolución de Psyduck</td>
+    </tr>
+    <tr>
+        <td>#056</td>
+        <td>Mankey</td>
+        <td>Lucha</td>
+        <td>Mankey (nivel 28) -> Primeape</td>
+        <td>Ruta 3, 4, 22, 23</td>
+    </tr>
+    <tr>
+        <td>#057</td>
+        <td>Primeape</td>
+        <td>Lucha</td>
+        <td></td>
+        <td>Evolución de Mankey</td>
+    </tr>
+    <tr>
+        <td>#058</td>
+        <td>Growlithe</td>
+        <td>Fuego</td>
+        <td>Growlithe (usando Piedra Fuego) -> Arcanine</td>
+        <td>Rutas 7, 8</td>
+    </tr>
+    <tr>
+        <td>#059</td>
+        <td>Arcanine</td>
+        <td>Fuego</td>
+        <td></td>
+        <td>Evolución de Growlithe (usando Piedra Fuego)</td>
+    </tr>
+    <tr>
+        <td>#060</td>
+        <td>Poliwag</td>
+        <td>Agua</td>
+        <td>Poliwag (nivel 25) -> Poliwhirl (usando Piedra Agua) -> Poliwrath</td>
+        <td>Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#061</td>
+        <td>Poliwhirl</td>
+        <td>Agua</td>
+        <td>Poliwhirl (usando Piedra Agua) -> Poliwrath</td>
+        <td>Evolución de Poliwag</td>
+    </tr>
+    <tr>
+        <td>#062</td>
+        <td>Poliwrath</td>
+        <td>Agua/Lucha</td>
+        <td></td>
+        <td>Evolución de Poliwhirl (usando Piedra Agua)</td>
+    </tr>
+    <tr>
+        <td>#063</td>
+        <td>Abra</td>
+        <td>Psíquico</td>
+        <td>Abra (nivel 16) -> Kadabra (por intercambio) -> Alakazam</td>
+        <td>Rutas 24, 25</td>
+    </tr>
+    <tr>
+        <td>#064</td>
+        <td>Kadabra</td>
+        <td>Psíquico</td>
+        <td>Kadabra (por intercambio) -> Alakazam</td>
+        <td>Evolución de Abra</td>
+    </tr>
+    <tr>
+        <td>#065</td>
+        <td>Alakazam</td>
+        <td>Psíquico</td>
+        <td></td>
+        <td>Evolución de Kadabra (por intercambio)</td>
+    </tr>
+    <tr>
+        <td>#066</td>
+        <td>Machop</td>
+        <td>Lucha</td>
+        <td>Machop (nivel 28) -> Machoke (por intercambio) -> Machamp</td>
+        <td>Cueva Celeste, Cueva Granizada</td>
+    </tr>
+    <tr>
+        <td>#067</td>
+        <td>Machoke</td>
+        <td>Lucha</td>
+        <td>Machoke (por intercambio) -> Machamp</td>
+        <td>Evolución de Machop</td>
+    </tr>
+    <tr>
+        <td>#068</td>
+        <td>Machamp</td>
+        <td>Lucha</td>
+        <td></td>
+        <td>Evolución de Machoke (por intercambio)</td>
+    </tr>
+    <tr>
+        <td>#069</td>
+        <td>Bellsprout</td>
+        <td>Planta/Veneno</td>
+        <td>Bellsprout (nivel 21) -> Weepinbell (usando Piedra Hoja) -> Victreebel</td>
+        <td>Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#070</td>
+        <td>Weepinbell</td>
+        <td>Planta/Veneno</td>
+        <td>Weepinbell (usando Piedra Hoja) -> Victreebel</td>
+        <td>Evolución de Bellsprout</td>
+    </tr>
+    <tr>
+        <td>#071</td>
+        <td>Victreebel</td>
+        <td>Planta/Veneno</td>
+        <td></td>
+        <td>Evolución de Weepinbell (usando Piedra Hoja)</td>
+    </tr>
+    <tr>
+        <td>#072</td>
+        <td>Tentacool</td>
+        <td>Agua/Veneno</td>
+        <td>Tentacool (nivel 30) -> Tentacruel</td>
+        <td>Rutas 12, 13, 19, 20, 21, 23</td>
+    </tr>
+    <tr>
+        <td>#073</td>
+        <td>Tentacruel</td>
+        <td>Agua/Veneno</td>
+        <td></td>
+        <td>Evolución de Tentacool</td>
+    </tr>
+    <tr>
+        <td>#074</td>
+        <td>Geodude</td>
+        <td>Roca/Tierra</td>
+        <td>Geodude (nivel 25) -> Graveler (por intercambio) -> Golem</td>
+        <td>Monte Moon, Cueva Celeste, Cueva Diglett</td>
+    </tr>
+    <tr>
+        <td>#075</td>
+        <td>Graveler</td>
+        <td>Roca/Tierra</td>
+        <td>Graveler (por intercambio) -> Golem</td>
+        <td>Evolución de Geodude</td>
+    </tr>
+    <tr>
+        <td>#076</td>
+        <td>Golem</td>
+        <td>Roca/Tierra</td>
+        <td></td>
+        <td>Evolución de Graveler (por intercambio)</td>
+    </tr>
+    <tr>
+        <td>#077</td>
+        <td>Ponyta</td>
+        <td>Fuego</td>
+        <td>Ponyta (nivel 40) -> Rapidash</td>
+        <td>Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#078</td>
+        <td>Rapidash</td>
+        <td>Fuego</td>
+        <td></td>
+        <td>Evolución de Ponyta</td>
+    </tr>
+    <tr>
+        <td>#079</td>
+        <td>Slowpoke</td>
+        <td>Agua/Psíquico</td>
+        <td>Slowpoke (nivel 37) -> Slowbro</td>
+        <td>Isla Canela, Ruta 12</td>
+    </tr>
+    <tr>
+        <td>#080</td>
+        <td>Slowbro</td>
+        <td>Agua/Psíquico</td>
+        <td></td>
+        <td>Evolución de Slowpoke</td>
+    </tr>
+    <tr>
+        <td>#081</td>
+        <td>Magnemite</td>
+        <td>Eléctrico/Acero</td>
+        <td>Magnemite (nivel 30) -> Magneton</td>
+        <td>Zona de la Cueva de Cerulean, Zona del Centro Comercial, Isla Canela</td>
+    </tr>
+    <tr>
+        <td>#082</td>
+        <td>Magneton</td>
+        <td>Eléctrico/Acero</td>
+        <td></td>
+        <td>Evolución de Magnemite</td>
+    </tr>
+    <tr>
+        <td>#083</td>
+        <td>Farfetch'd</td>
+        <td>Normal/Volador</td>
+        <td>No tiene</td>
+        <td>Ciudad Celeste (intercambio)</td>
+    </tr>
+    <tr>
+        <td>#084</td>
+        <td>Doduo</td>
+        <td>Normal/Volador</td>
+        <td>Doduo (nivel 31) -> Dodrio</td>
+        <td>Rutas 16, 17, 18</td>
+    </tr>
+    <tr>
+        <td>#085</td>
+        <td>Dodrio</td>
+        <td>Normal/Volador</td>
+        <td></td>
+        <td>Evolución de Doduo</td>
+    </tr>
+    <tr>
+        <td>#086</td>
+        <td>Seel</td>
+        <td>Agua</td>
+        <td>Seel (nivel 34) -> Dewgong</td>
+        <td>Isla Canela, Safari de la Zona 3</td>
+    </tr>
+    <tr>
+        <td>#087</td>
+        <td>Dewgong</td>
+        <td>Agua/Hielo</td>
+        <td></td>
+        <td>Evolución de Seel</td>
+    </tr>
+    <tr>
+        <td>#088</td>
+        <td>Grimer</td>
+        <td>Veneno</td>
+        <td>Grimer (nivel 38) -> Muk</td>
+        <td>Mansión Pokémon, Safari de la Zona 3</td>
+    </tr>
+    <tr>
+        <td>#089</td>
+        <td>Muk</td>
+        <td>Veneno</td>
+        <td></td>
+        <td>Evolución de Grimer</td>
+    </tr>
+    <tr>
+        <td>#090</td>
+        <td>Shellder</td>
+        <td>Agua</td>
+        <td>Shellder (usando Piedra Agua) -> Cloyster</td>
+        <td>Zona del Casino, Isla Canela (no en Rojo Fuego, debes comerciar con Verde Hoja)</td>
+    </tr>
+    <tr>
+        <td>#091</td>
+        <td>Cloyster</td>
+        <td>Agua/Hielo</td>
+        <td></td>
+        <td>Evolución de Shellder (usando Piedra Agua)</td>
+    </tr>
+    <tr>
+        <td>#092</td>
+        <td>Gastly</td>
+        <td>Fantasma/Veneno</td>
+        <td>Gastly (nivel 25) -> Haunter (por intercambio) -> Gengar</td>
+        <td>Torre Pokémon, Safari de la Zona 2</td>
+    </tr>
+    <tr>
+        <td>#093</td>
+        <td>Haunter</td>
+        <td>Fantasma/Veneno</td>
+        <td>Haunter (por intercambio) -> Gengar</td>
+        <td>Evolución de Gastly</td>
+    </tr>
+    <tr>
+        <td>#094</td>
+        <td>Gengar</td>
+        <td>Fantasma/Veneno</td>
+        <td></td>
+        <td>Evolución de Haunter (por intercambio)</td>
+    </tr>
+    <tr>
+        <td>#095</td>
+        <td>Onix</td>
+        <td>Roca/Tierra</td>
+        <td>Onix (intercambio con objeto) -> Steelix</td>
+        <td>Cueva de la Isla Canela</td>
+    </tr>
+    <tr>
+        <td>#096</td>
+        <td>Drowzee</td>
+        <td>Psíquico</td>
+        <td>Drowzee (nivel 26) -> Hypno</td>
+        <td>Ruta 11</td>
+    </tr>
+    <tr>
+        <td>#097</td>
+        <td>Hypno</td>
+        <td>Psíquico</td>
+        <td></td>
+        <td>Evolución de Drowzee</td>
+    </tr>
+    <tr>
+        <td>#098</td>
+        <td>Krabby</td>
+        <td>Agua</td>
+        <td>Krabby (nivel 28) -> Kingler</td>
+        <td>Rutas 19, 20, 21</td>
+    </tr>
+    <tr>
+        <td>#099</td>
+        <td>Kingler</td>
+        <td>Agua</td>
+        <td></td>
+        <td>Evolución de Krabby</td>
+    </tr>
+    <tr>
+        <td>#100</td>
+        <td>Voltorb</td>
+        <td>Eléctrico</td>
+        <td>Voltorb (nivel 30) -> Electrode</td>
+        <td>Zona del Centro Comercial, Safari de la Zona 4</td>
+    </tr>
+
+
+<table>
+    <tr>
+        <th>Número en la Pokédex</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Evoluciones</th>
+        <th>Ubicación</th>
+    </tr>
+    <tr>
+        <td>#101</td>
+        <td>Exeggcute</td>
+        <td>Planta/Psíquico</td>
+        <td>Exeggcute (usando Piedra Hoja) -> Exeggutor</td>
+        <td>Isla Inta</td>
+    </tr>
+    <tr>
+        <td>#102</td>
+        <td>Exeggutor</td>
+        <td>Planta/Psíquico</td>
+        <td></td>
+        <td>Evolución de Exeggcute (usando Piedra Hoja)</td>
+    </tr>
+    <tr>
+        <td>#103</td>
+        <td>Cubone</td>
+        <td>Tierra</td>
+        <td>Cubone (nivel 28) -> Marowak</td>
+        <td>Torre Pokémon, Safari de la Zona 3</td>
+    </tr>
+    <tr>
+        <td>#104</td>
+        <td>Marowak</td>
+        <td>Tierra</td>
+        <td></td>
+        <td>Evolución de Cubone</td>
+    </tr>
+    <tr>
+        <td>#106</td>
+        <td>Hitmonlee</td>
+        <td>Lucha</td>
+        <td>No tiene, se obtiene al elegir el Hitmonlee en la Mansión Pokémon</td>
+        <td>Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#107</td>
+        <td>Hitmonchan</td>
+        <td>Lucha</td>
+        <td>No tiene, se obtiene al elegir el Hitmonchan en la Mansión Pokémon</td>
+        <td>Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#108</td>
+        <td>Lickitung</td>
+        <td>Normal</td>
+        <td>No tiene</td>
+        <td>Ruta 18, Safari de la Zona 2, Safari de la Zona 3</td>
+    </tr>
+    <tr>
+        <td>#109</td>
+        <td>Koffing</td>
+        <td>Veneno</td>
+        <td>Koffing (nivel 35) -> Weezing</td>
+        <td>Zona del Casino</td>
+    </tr>
+    <tr>
+        <td>#110</td>
+        <td>Weezing</td>
+        <td>Veneno</td>
+        <td></td>
+        <td>Evolución de Koffing</td>
+    </tr>
+    <tr>
+        <td>#111</td>
+        <td>Rhyhorn</td>
+        <td>Tierra/Roca</td>
+        <td>Rhyhorn (nivel 42) -> Rhydon</td>
+        <td>Safari de la Zona 3</td>
+    </tr>
+    <tr>
+        <td>#112</td>
+        <td>Rhydon</td>
+        <td>Tierra/Roca</td>
+        <td></td>
+        <td>Evolución de Rhyhorn</td>
+    </tr>
+    <tr>
+        <td>#113</td>
+        <td>Chansey</td>
+        <td>Normal</td>
+        <td>No tiene</td>
+        <td>Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#114</td>
+        <td>Tangela</td>
+        <td>Planta</td>
+        <td>No tiene</td>
+        <td>Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#115</td>
+        <td>Kangaskhan</td>
+        <td>Normal</td>
+        <td>No tiene</td>
+        <td>Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#116</td>
+        <td>Horsea</td>
+        <td>Agua</td>
+        <td>Horsea (nivel 32) -> Seadra (usando Piedra Agua) -> Kingdra</td>
+        <td>Zona del Casino</td>
+    </tr>
+    <tr>
+        <td>#117</td>
+        <td>Seadra</td>
+        <td>Agua</td>
+        <td>Seadra (usando Piedra Agua) -> Kingdra</td>
+        <td>Evolución de Horsea</td>
+    </tr>
+    <tr>
+        <td>#118</td>
+        <td>Goldeen</td>
+        <td>Agua</td>
+        <td>Goldeen (nivel 33) -> Seaking</td>
+        <td>Rutas 12, 13, 18, 19, 20, 21, 22, 23, 24, 25</td>
+    </tr>
+    <tr>
+        <td>#119</td>
+        <td>Seaking</td>
+        <td>Agua</td>
+        <td></td>
+        <td>Evolución de Goldeen</td>
+    </tr>
+    <tr>
+        <td>#120</td>
+        <td>Staryu</td>
+        <td>Agua</td>
+        <td>Staryu (usando Piedra Agua) -> Starmie</td>
+        <td>Isla Canela, Safari de la Zona 1</td>
+    </tr>
+    <tr>
+        <td>#121</td>
+        <td>Starmie</td>
+        <td>Agua/Psíquico</td>
+        <td></td>
+        <td>Evolución de Staryu (usando Piedra Agua)</td>
+    </tr>
+    <tr>
+        <td>#122</td>
+        <td>Mr. Mime</td>
+        <td>Psíquico/Hada</td>
+        <td>No tiene</td>
+        <td>Ciudad Celeste (intercambio)</td>
+    </tr>
+    <tr>
+        <td>#123</td>
+        <td>Scyther</td>
+        <td>Bicho/Volador</td>
+        <td>No tiene, se obtiene al elegir el Scyther en la Mansión Pokémon</td>
+        <td>Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#124</td>
+        <td>Jynx</td>
+        <td>Hielo/Psíquico</td>
+        <td>No tiene</td>
+        <td>Ciudad Celeste (intercambio)</td>
+    </tr>
+    <tr>
+        <td>#125</td>
+        <td>Electabuzz</td>
+        <td>Eléctrico</td>
+        <td>No tiene</td>
+        <td>Central Energía (intercambio)</td>
+    </tr>
+    <tr>
+        <td>#126</td>
+        <td>Magmar</td>
+        <td>Fuego</td>
+        <td>No tiene</td>
+        <td>Mansión Pokémon (intercambio)</td>
+    </tr>
+    <tr>
+        <td>#127</td>
+        <td>Pinsir</td>
+        <td>Bicho</td>
+        <td>No tiene, se obtiene al elegir el Pinsir en la Mansión Pokémon</td>
+        <td>Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#128</td>
+        <td>Tauros</td>
+        <td>Normal</td>
+        <td>No tiene</td>
+        <td>Safari de la Zona 3, Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#129</td>
+        <td>Magikarp</td>
+        <td>Agua</td>
+        <td>Magikarp (nivel 20) -> Gyarados</td>
+        <td>Ciudad Celeste, Safari de la Zona 1</td>
+    </tr>
+    <tr>
+        <td>#130</td>
+        <td>Gyarados</td>
+        <td>Agua/Volador</td>
+        <td></td>
+        <td>Evolución de Magikarp</td>
+    </tr>
+    <tr>
+        <td>#131</td>
+        <td>Lapras</td>
+        <td>Agua/Hielo</td>
+        <td>No tiene</td>
+        <td>Isla Canela (regalo del capitán del S.S. Anne)</td>
+    </tr>
+    <tr>
+        <td>#132</td>
+        <td>Ditto</td>
+        <td>Normal</td>
+        <td>No tiene</td>
+        <td>Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#133</td>
+        <td>Eevee</td>
+        <td>Normal</td>
+        <td>Eevee (usando Piedra Agua) -> Vaporeon, (usando Piedra Trueno) -> Jolteon, (usando Piedra Fuego) -> Flareon</td>
+        <td>Ciudad Azulona, Mansión Pokémon</td>
+    </tr>
+    <tr>
+        <td>#134</td>
+        <td>Vaporeon</td>
+        <td>Agua</td>
+        <td></td>
+        <td>Evolución de Eevee (usando Piedra Agua)</td>
+    </tr>
+    <tr>
+        <td>#135</td>
+        <td>Jolteon</td>
+        <td>Eléctrico</td>
+        <td></td>
+        <td>Evolución de Eevee (usando Piedra Trueno)</td>
+    </tr>
+    <tr>
+        <td>#136</td>
+        <td>Flareon</td>
+        <td>Fuego</td>
+        <td></td>
+        <td>Evolución de Eevee (usando Piedra Fuego)</td>
+    </tr>
+    <tr>
+        <td>#137</td>
+        <td>Porygon</td>
+        <td>Normal</td>
+        <td>No tiene, se obtiene en el Edificio Celadon</td>
+        <td>Ciudad Azulona (Edificio Celadon)</td>
+    </tr>
+    <tr>
+        <td>#138</td>
+        <td>Omanyte</td>
+        <td>Roca/Agua</td>
+        <td>Omanyte (nivel 40) -> Omastar</td>
+        <td>Helipuerto, Ciudad Celeste (fósil)</td>
+    </tr>
+    <tr>
+        <td>#139</td>
+        <td>Omastar</td>
+        <td>Roca/Agua</td>
+        <td></td>
+        <td>Evolución de Omanyte</td>
+    </tr>
+    <tr>
+        <td>#140</td>
+        <td>Kabuto</td>
+        <td>Roca/Agua</td>
+        <td>Kabuto (nivel 40) -> Kabutops</td>
+        <td>Helipuerto, Ciudad Celeste (fósil)</td>
+    </tr>
+    <tr>
+        <td>#141</td>
+        <td>Kabutops</td>
+        <td>Roca/Agua</td>
+        <td></td>
+        <td>Evolución de Kabuto</td>
+    </tr>
+    <tr>
+        <td>#142</td>
+        <td>Aerodactyl</td>
+        <td>Roca/Volador</td>
+        <td>No tiene, se obtiene en el Museo</td>
+        <td>Museo de Ciudad Plateada (reviviendo el fósil)</td>
+    </tr>
+    <tr>
+        <td>#143</td>
+        <td>Snorlax</td>
+        <td>Normal</td>
+        <td>No tiene</td>
+        <td>Ruta 12, 16, 18, 19, 21, 22, 23, 24, 25</td>
+    </tr>
+    <tr>
+        <td>#144</td>
+        <td>Articuno</td>
+        <td>Hielo/Volador</td>
+        <td>No tiene, es un Pokémon legendario</td>
+        <td>Cueva Celeste</td>
+    </tr>
+    <tr>
+        <td>#145</td>
+        <td>Zapdos</td>
+        <td>Eléctrico/Volador</td>
+        <td>No tiene, es un Pokémon legendario</td>
+        <td>Central Energía</td>
+    </tr>
+    <tr>
+        <td>#146</td>
+        <td>Moltres</td>
+        <td>Fuego/Volador</td>
+        <td>No tiene, es un Pokémon legendario</td>
+        <td>Isla Inta</td>
+    </tr>
+    <tr>
+        <td>#147</td>
+        <td>Dratini</td>
+        <td>Dragón</td>
+        <td>Dratini (nivel 30) -> Dragonair (nivel 55) -> Dragonite</td>
+        <td>Safari de la Zona 4</td>
+    </tr>
+    <tr>
+        <td>#148</td>
+        <td>Dragonair</td>
+        <td>Dragón</td>
+        <td>Dragonair (nivel 55) -> Dragonite</td>
+        <td>Evolución de Dratini</td>
+    </tr>
+    <tr>
+        <td>#149</td>
+        <td>Dragonite</td>
+        <td>Dragón/Volador</td>
+        <td></td>
+        <td>Evolución de Dragonair</td>
+    </tr>
+    <tr>
+        <td>#150</td>
+        <td>Mewtwo</td>
+        <td>Psíquico</td>
+        <td>No tiene, es un Pokémon legendario</td>
+        <td>Cueva Celeste (solo uno en el juego)</td>
+    </tr>
+    <tr>
+        <td>#151</td>
+        <td>Mew</td>
+        <td>Psíquico</td>
+        <td>No tiene, es un Pokémon legendario</td>
+        <td>Evento especial o mediante intercambio de otros juegos</td>
+    </tr>
+</table>
+
+
+</table>
+
+
+</table>
+
+    </div>
+    <div class="tab-pane" id="pokemones">   <h2>Primera Generación (Kanto)</h2>
+    <table>
+        <tr>
+            <td>Medalla de la Roca</td>
+            <td>Líder del Gimnasio: Brock</td>
+            <td>Habilidad Otorgada: Defensa Especial aumenta en batalla</td>
+            <td>Gimnasio: Ciudad Plateada</td>
+        </tr>
+        <tr>
+            <td>Medalla del Agua</td>
+            <td>Líder del Gimnasio: Misty</td>
+            <td>Habilidad Otorgada: Aumenta la velocidad de los Pokémon fuera de combate</td>
+            <td>Gimnasio: Ciudad Celeste</td>
+        </tr>
+        <tr>
+            <td>Medalla Trueno</td>
+            <td>Líder del Gimnasio: Lt. Surge</td>
+            <td>Habilidad Otorgada: Aumenta la velocidad de los Pokémon fuera de combate</td>
+            <td>Gimnasio: Ciudad Carmín</td>
+        </tr>
+        <tr>
+            <td>Medalla Esmog</td>
+            <td>Líder del Gimnasio: Erika</td>
+            <td>Habilidad Otorgada: Aumenta la velocidad de los Pokémon fuera de combate</td>
+            <td>Gimnasio: Ciudad Azulona</td>
+        </tr>
+        <tr>
+            <td>Medalla Planta</td>
+            <td>Líder del Gimnasio: Koga</td>
+            <td>Habilidad Otorgada: Aumenta la velocidad de los Pokémon fuera de combate</td>
+            <td>Gimnasio: Ciudad Fucsia</td>
+        </tr>
+        <tr>
+            <td>Medalla Psíquica</td>
+            <td>Líder del Gimnasio: Sabrina</td>
+            <td>Habilidad Otorgada: Aumenta la velocidad de los Pokémon fuera de combate</td>
+            <td>Gimnasio: Ciudad Azafrán</td>
+        </tr>
+        <tr>
+            <td>Medalla Arcoíris</td>
+            <td>Líder del Gimnasio: Blaine</td>
+            <td>Habilidad Otorgada: Aumenta la velocidad de los Pokémon fuera de combate</td>
+            <td>Gimnasio: Isla Canela</td>
+        </tr>
+        <tr>
+            <td>Medalla de la Liga Pokémon</td>
+            <td>Líder del Gimnasio: Giovanni</td>
+            <td>Habilidad Otorgada: Aumenta el daño infligido por movimientos de tipo Planta</td>
+            <td>Gimnasio: Ciudad Plateada</td>
+        </tr>
+    </table>
+
+    <!-- Generación 2 (Johto) -->
+    <h2>Segunda Generación (Johto)</h2>
+    <table>
+        <tr>
+            <td>Medalla Zafiro</td>
+            <td>Líder del Gimnasio: Falkner</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Malva</td>
+        </tr>
+        <tr>
+            <td>Medalla Céfiro</td>
+            <td>Líder del Gimnasio: Bugsy</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Trigal</td>
+        </tr>
+        <tr>
+            <td>Medalla Ala</td>
+            <td>Líder del Gimnasio: Whitney</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Iris</td>
+        </tr>
+        <tr>
+            <td>Medalla Colmena</td>
+            <td>Líder del Gimnasio: Morty</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Trigal</td>
+        </tr>
+        <tr>
+            <td>Medalla Torre</td>
+            <td>Líder del Gimnasio: Chuck</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Trigal</td>
+        </tr>
+        <tr>
+            <td>Medalla Planicie</td>
+            <td>Líder del Gimnasio: Jasmine</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Trigal</td>
+        </tr>
+        <tr>
+            <td>Medalla Tempestad</td>
+            <td>Líder del Gimnasio: Pryce</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Olivo</td>
+        </tr>
+        <tr>
+            <td>Medalla Mineral</td>
+            <td>Líder del Gimnasio: Clair</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Endrino</td>
+        </tr>
+    </table>
+
+    <!-- Generación 3 (Hoenn) -->
+    <h2>Tercera Generación (Hoenn)</h2>
+    <table>
+        <tr>
+            <td>Medalla Piedra</td>
+            <td>Líder del Gimnasio: Roxanne</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Petalia</td>
+        </tr>
+        <tr>
+            <td>Medalla Knuckle</td>
+            <td>Líder del Gimnasio: Brawly</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Petalia</td>
+        </tr>
+        <tr>
+            <td>Medalla Dinamo</td>
+            <td>Líder del Gimnasio: Wattson</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Mauville</td>
+        </tr>
+        <tr>
+            <td>Medalla Calor</td>
+            <td>Líder del Gimnasio: Flannery</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Lavacalda</td>
+        </tr>
+        <tr>
+            <td>Medalla Equilibrio</td>
+            <td>Líder del Gimnasio: Norman</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Petalia</td>
+        </tr>
+        <tr>
+            <td>Medalla Pluma</td>
+            <td>Líder del Gimnasio: Winona</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Fortree</td>
+        </tr>
+        <tr>
+            <td>Medalla Psíquica</td>
+            <td>Líder del Gimnasio: Tate y Liza</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Algaria</td>
+        </tr>
+        <tr>
+            <td>Medalla Resplandor</td>
+            <td>Líder del Gimnasio: Juan</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Algaria</td>
+        </tr>
+    </table>
+    
+    <!-- Generación 4 (Sinnoh) -->
+    <h2>Cuarta Generación (Sinnoh)</h2>
+    <table>
+        <tr>
+            <td>Medalla Carbón</td>
+            <td>Líder del Gimnasio: Roark</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pirita</td>
+        </tr>
+        <tr>
+            <td>Medalla Mina</td>
+            <td>Líder del Gimnasio: Gardenia</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Vetusta</td>
+        </tr>
+        <tr>
+            <td>Medalla Fantasma</td>
+            <td>Líder del Gimnasio: Fantina</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Corazón</td>
+        </tr>
+        <tr>
+            <td>Medalla Cobalto</td>
+            <td>Líder del Gimnasio: Maylene</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Rocavelo</td>
+        </tr>
+        <tr>
+            <td>Medalla Reliquia</td>
+            <td>Líder del Gimnasio: Crasher Wake</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Canal</td>
+        </tr>
+        <tr>
+            <td>Medalla Adoquín</td>
+            <td>Líder del Gimnasio: Byron</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pirita</td>
+        </tr>
+        <tr>
+            <td>Medalla Sierra</td>
+            <td>Líder del Gimnasio: Candice</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Fractal</td>
+        </tr>
+        <tr>
+            <td>Medalla Estrella</td>
+            <td>Líder del Gimnasio: Volkner</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Marina</td>
+        </tr>
+    </table>
+    
+    <!-- Generación 5 (Teselia) -->
+    <h2>Quinta Generación (Teselia)</h2>
+    <table>
+        <tr>
+            <td>Medalla Trío</td>
+            <td>Líder del Gimnasio: Cilan / Chili / Cress</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Gres</td>
+        </tr>
+        <tr>
+            <td>Medalla Brote</td>
+            <td>Líder del Gimnasio: Lenora</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Gres</td>
+        </tr>
+        <tr>
+            <td>Medalla Vista</td>
+            <td>Líder del Gimnasio: Burgh</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Gres</td>
+        </tr>
+        <tr>
+            <td>Medalla Envolvente</td>
+            <td>Líder del Gimnasio: Elesa</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Porcelana</td>
+        </tr>
+        <tr>
+            <td>Medalla Carámbano</td>
+            <td>Líder del Gimnasio: Clay</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Loza</td>
+        </tr>
+        <tr>
+            <td>Medalla Tubo</td>
+            <td>Líder del Gimnasio: Skyla</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Hormigón</td>
+        </tr>
+        <tr>
+            <td>Medalla Lluvia</td>
+            <td>Líder del Gimnasio: Drayden / Iris</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Caolín</td>
+        </tr>
+    </table>
+
+    <!-- Generación 6 (Kalos) -->
+    <h2>Sexta Generación (Kalos)</h2>
+    <table>
+        <tr>
+            <td>Medalla Aura</td>
+            <td>Líder del Gimnasio: Viola</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Luminalia</td>
+        </tr>
+        <tr>
+            <td>Medalla Tormenta</td>
+            <td>Líder del Gimnasio: Grant</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Luminalia</td>
+        </tr>
+        <tr>
+            <td>Medalla Ladera</td>
+            <td>Líder del Gimnasio: Korrina</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Relieve</td>
+        </tr>
+        <tr>
+            <td>Medalla Reluciente</td>
+            <td>Líder del Gimnasio: Ramos</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Relieve</td>
+        </tr>
+        <tr>
+            <td>Medalla Anillo</td>
+            <td>Líder del Gimnasio: Clemont</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Témpera</td>
+        </tr>
+        <tr>
+            <td>Medalla Estrella</td>
+            <td>Líder del Gimnasio: Valerie</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Témpera</td>
+        </tr>
+        <tr>
+            <td>Medalla Pixi</td>
+            <td>Líder del Gimnasio: Olympia</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Yantra</td>
+        </tr>
+    </table>
+
+    <!-- Generación 7 (Alola) -->
+    <h2>Séptima Generación (Alola)</h2>
+    <table>
+        <tr>
+            <td>Medalla Melemele</td>
+            <td>Líder del Gimnasio: Hala</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Hauoli</td>
+        </tr>
+        <tr>
+            <td>Medalla Akala</td>
+            <td>Líder del Gimnasio: Olivia</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Konikoni</td>
+        </tr>
+        <tr>
+            <td>Medalla Ula Ula</td>
+            <td>Líder del Gimnasio: Nanu</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Malíe</td>
+        </tr>
+        <tr>
+            <td>Medalla Poni</td>
+            <td>Líder del Gimnasio: Hapu</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Malíe</td>
+        </tr>
+    </table>
+
+    <!-- Generación 8 (Galar) -->
+    <h2>Octava Generación (Galar)</h2>
+    <table>
+        <tr>
+            <td>Medalla Honor</td>
+            <td>Líder del Gimnasio: Milo</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Fortaleza</td>
+            <td>Líder del Gimnasio: Nessa</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Luminosa</td>
+            <td>Líder del Gimnasio: Kabu</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Agua</td>
+            <td>Líder del Gimnasio: Bea / Allister</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Bola</td>
+            <td>Líder del Gimnasio: Opal</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Hielo</td>
+            <td>Líder del Gimnasio: Gordie / Melony</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Psico</td>
+            <td>Líder del Gimnasio: Piers</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+        <tr>
+            <td>Medalla Dragón</td>
+            <td>Líder del Gimnasio: Raihan</td>
+            <td>Habilidad Otorgada: Desconocida</td>
+            <td>Gimnasio: Ciudad Pistón</td>
+        </tr>
+    </table>
+    </div>
+    <div class="tab-pane" id="juegos">
+                </table>
+    </article>
+    <!-- Artículos adicionales del primer texto -->
+    <!-- Contenido de los artículos del segundo texto -->
+    <article id="juegos">
+        <h2>Juegos de Pokémon</h2>
+        <!-- Pestañas de Bootstrap para las generaciones -->
+        <ul class="nav nav-tabs" id="generaciones">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#gen1">Generación 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen2">Generación 2</a>
+            </li>
+            <!-- Agrega aquí las pestañas para las otras generaciones -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen3">Generación 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen4">Generación 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen5">Generación 5</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen6">Generación 6</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen7">Generación 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#gen8">Generación 8</a>
+            </li>
+        </ul>
+        <!-- Contenido de las pestañas de generaciones -->
+        <!-- Generación 1 -->
+<!-- Contenido de las pestañas de generaciones -->
+<div class="tab-content">
+    <!-- Generación 1 -->
+    <div id="gen1" class="tab-pane fade show active">
+        <h3>Generación 1</h3>
+        <p>Juegos: Pokémon Rojo y Verde (Red and Green en Japón), Pokémon Amarillo</p>
+        <p>Primera Generación (Rojo, Azul y Amarillo): Estos juegos marcaron el inicio de la franquicia. Los jugadores asumieron el papel de un joven entrenador en la región de Kanto. Su misión era convertirse en el Campeón de la Liga Pokémon, mientras atrapaban y entrenaban a los 151 Pokémon originales. El legendario Mewtwo y la misteriosa área del Safari Zone fueron algunos de los momentos memorables.</p>
+        <!-- Tabla para la Generación 1 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pokémon Rojo y Verde (Red and Green en Japón)</td>
+                <td>Bulbasaur</td>
+                <td>Planta/Veneno</td>
+                <td>Tackle, Growl, Leech Seed</td>
+                <td>Bulbasaur (nivel 16) - Ivysaur (nivel 32) - Venusaur</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pokémon Amarillo</td>
+                <td>Pikachu</td>
+                <td>Eléctrico</td>
+                <td>Thunder Shock, Growl</td>
+                <td>Pikachu (nivel 16) - Raichu (mediante Piedra Trueno)</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 2 -->
+    <div id="gen2" class="tab-pane fade">
+        <h3>Generación 2</h3>
+        <p>Juegos: Pokémon Oro y Plata, Pokémon Cristal</p>
+        <p>Segunda Generación (Oro y Plata): Johto fue la nueva región, y la secuela espiritual de la primera generación. Presentó 100 Pokémon adicionales, lo que elevó el total a 251. Los jugadores pudieron enfrentar a la Liga Pokémon en Johto y luego regresar a Kanto para enfrentar los gimnasios originales, lo que agregó una capa adicional de nostalgia y emoción.</p>
+        <!-- Tabla para la Generación 2 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pokémon Oro y Plata</td>
+                <td>Chikorita</td>
+                <td>Planta</td>
+                <td>Tackle, Growl, Razor Leaf</td>
+                <td>Chikorita (nivel 16) - Bayleef (nivel 32) - Meganium</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pokémon Oro y Plata</td>
+                <td>Cyndaquil</td>
+                <td>Fuego</td>
+                <td>Tackle, Leer, Ember</td>
+                <td>Cyndaquil (nivel 14) - Quilava (nivel 36) - Typhlosion</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pokémon Oro y Plata</td>
+                <td>Totodile</td>
+                <td>Agua</td>
+                <td>Scratch, Leer, Water Gun</td>
+                <td>Totodile (nivel 18) - Croconaw (nivel 30) - Feraligatr</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 3 -->
+    <div id="gen3" class="tab-pane fade">
+        <h3>Generación 3</h3>
+        <p>Juegos: Pokémon Rubí y Zafiro, Pokémon Esmeralda, Pokémon Rojo Fuego y Verde Hoja (remakes de la Generación 1)</p>
+        <p>Tercera Generación (Rubí y Zafiro): Hoenn fue el nuevo mundo que los entrenadores exploraron. Aquí, enfrentaron la Liga Pokémon mientras se enredaban en la trama de los equipos Malvado y Aqua, que intentaban controlar a los legendarios Groudon y Kyogre. Las Batallas Dobles y las Contiendas fueron nuevas mecánicas emocionantes.</p>
+        <!-- Tabla para la Generación 3 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <!-- Agregar filas para la Generación 3 -->
+            <tr>
+                <td>3</td>
+                <td>Pokémon Rubí y Zafiro</td>
+                <td>Treecko</td>
+                <td>Planta</td>
+                <td>Pound, Leer, Absorb</td>
+                <td>Treecko (nivel 16) - Grovyle (nivel 36) - Sceptile</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pokémon Rubí y Zafiro</td>
+                <td>Torchic</td>
+                <td>Fuego</td>
+                <td>Scratch, Growl, Ember</td>
+                <td>Torchic (nivel 16) - Combusken (nivel 36) - Blaziken</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pokémon Rubí y Zafiro</td>
+                <td>Mudkip</td>
+                <td>Agua</td>
+                <td>Tackle, Growl, Water Gun</td>
+                <td>Mudkip (nivel 16) - Marshtomp (nivel 36) - Swampert</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 4 -->
+    <div id="gen4" class="tab-pane fade">
+        <h3>Generación 4</h3>
+        <p>Juegos: Pokémon Diamante y Perla, Pokémon Platino, Pokémon Mundo Misterioso: Exploradores del Tiempo y Exploradores de la Oscuridad</p>
+        <p>Cuarta Generación (Diamante y Perla): Sinnoh trajo 107 Pokémon nuevos y una narrativa intrigante sobre los Legendarios Dialga y Palkia. Se introdujo el sistema de tiempo y un mundo más amplio. Los jugadores también pudieron interactuar en línea a través de Wi-Fi, lo que cambió la forma en que se jugaba Pokémon.</p>
+        <!-- Tabla para la Generación 4 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <!-- Agregar filas para la Generación 4 -->
+            <tr>
+                <td>4</td>
+                <td>Pokémon Diamante y Perla</td>
+                <td>Turtwig</td>
+                <td>Planta</td>
+                <td>Tackle, Withdraw, Absorb</td>
+                <td>Turtwig (nivel 18) - Grotle (nivel 32) - Torterra</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pokémon Diamante y Perla</td>
+                <td>Chimchar</td>
+                <td>Fuego</td>
+                <td>Scratch, Leer, Ember</td>
+                <td>Chimchar (nivel 14) - Monferno (nivel 36) - Infernape</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pokémon Diamante y Perla</td>
+                <td>Piplup</td>
+                <td>Agua</td>
+                <td>Pound, Growl, Bubble</td>
+                <td>Piplup (nivel 16) - Prinplup (nivel 36) - Empoleon</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 5 -->
+    <div id="gen5" class="tab-pane fade">
+        <h3>Generación 5</h3>
+        <p>Juegos: Pokémon Negro y Blanco, Pokémon Negro 2 y Blanco 2</p>
+        <p>Quinta Generación (Negro y Blanco): Unova fue el escenario de esta generación, con 156 Pokémon nuevos. La historia se centró en la ética y la relación entre humanos y Pokémon. Las secuelas, Pokémon Negro 2 y Blanco 2, continuaron la historia y ampliaron la región.</p>
+        <!-- Tabla para la Generación 5 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <!-- Agregar filas para la Generación 5 -->
+            <tr>
+                <td>5</td>
+                <td>Pokémon Negro y Blanco</td>
+                <td>Snivy</td>
+                <td>Planta</td>
+                <td>Tackle, Leer, Vine Whip</td>
+                <td>Snivy (nivel 17) - Servine (nivel 36) - Serperior</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pokémon Negro y Blanco</td>
+                <td>Tepig</td>
+                <td>Fuego</td>
+                <td>Tackle, Tail Whip, Ember</td>
+                <td>Tepig (nivel 17) - Pignite (nivel 36) - Emboar</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pokémon Negro y Blanco</td>
+                <td>Oshawott</td>
+                <td>Agua</td>
+                <td>Tackle, Tail Whip, Water Gun</td>
+                <td>Oshawott (nivel 17) - Dewott (nivel 36) - Samurott</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 6 -->
+    <div id="gen6" class="tab-pane fade">
+        <h3>Generación 6</h3>
+        <p>Juegos: Pokémon X e Y, Pokémon Rubí Omega y Zafiro Alfa (remakes de la Generación 3)</p>
+        <p>Sexta Generación (X y Y): Kalos introdujo Megaevoluciones, una mecánica que cambió el juego al dar poder adicional a ciertos Pokémon. Los jugadores exploraron una región inspirada en Francia, desentrañaron la historia detrás de los legendarios Xerneas y Yveltal, y enfrentaron a la Liga Pokémon en un entorno en 3D.</p>
+        <!-- Tabla para la Generación 6 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <!-- Agregar filas para la Generación 6 -->
+            <tr>
+                <td>6</td>
+                <td>Pokémon X e Y</td>
+                <td>Chespin</td>
+                <td>Planta</td>
+                <td>Tackle, Growl, Vine Whip</td>
+                <td>Chespin (nivel 16) - Quilladin (nivel 36) - Chesnaught</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Pokémon X e Y</td>
+                <td>Fennekin</td>
+                <td>Fuego</td>
+                <td>Scratch, Tail Whip, Ember</td>
+                <td>Fennekin (nivel 16) - Braixen (nivel 36) - Delphox</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Pokémon X e Y</td>
+                <td>Froakie</td>
+                <td>Agua</td>
+                <td>Pound, Growl, Bubble</td>
+                <td>Froakie (nivel 16) - Frogadier (nivel 36) - Greninja</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 7 -->
+    <div id="gen7" class="tab-pane fade">
+        <h3>Generación 7</h3>
+        <p>Juegos: Pokémon Sol y Luna, Pokémon Ultrasol y Ultraluna, Pokémon Sol y Luna (edición mejorada)</p>
+        <p>Séptima Generación (Sol y Luna): Alola fue un cambio drástico, con un entorno tropical y una narrativa centrada en la Liga de Alola. Se introdujeron los Movimientos Z y los jugadores pudieron interactuar con los Pokémon a través del Poké Resort y la crianza de Pokémon.</p>
+        <!-- Tabla para la Generación 7 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <!-- Agregar filas para la Generación 7 -->
+            <tr>
+                <td>7</td>
+                <td>Pokémon Sol y Luna</td>
+                <td>Rowlet</td>
+                <td>Planta/Volador</td>
+                <td>Tackle, Leafage</td>
+                <td>Rowlet (nivel 17) - Dartrix (nivel 34) - Decidueye</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pokémon Sol y Luna</td>
+                <td>Litten</td>
+                <td>Fuego</td>
+                <td>Scratch, Ember</td>
+                <td>Litten (nivel 17) - Torracat (nivel 34) - Incineroar</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pokémon Sol y Luna</td>
+                <td>Popplio</td>
+                <td>Agua</td>
+                <td>Pound, Water Gun</td>
+                <td>Popplio (nivel 17) - Brionne (nivel 34) - Primarina</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Generación 8 -->
+    <div id="gen8" class="tab-pane fade">
+        <h3>Generación 8</h3>
+        <p>Juegos: Pokémon Espada y Escudo, Pokémon Mundo Misterioso: Equipo de Rescate DX</p>
+        <p>Octava Generación (Espada y Escudo): Galar presentó una nueva región inspirada en el Reino Unido. Con una expansión significativa en la jugabilidad en línea y el Pokémon Dinamax, estos juegos trajeron 81 Pokémon nuevos junto con muchas formas regionales. El desafío de los gimnasios y el torneo de la Liga Pokémon se mantuvieron como parte fundamental.</p>
+        <!-- Tabla para la Generación 8 -->
+        <table>
+            <tr>
+                <th>Generación</th>
+                <th>Juego</th>
+                <th>Pokémon Inicial</th>
+                <th>Tipo(s)</th>
+                <th>Habilidades Básicas</th>
+                <th>Evolución</th>
+            </tr>
+            <!-- Agregar filas para la Generación 8 -->
+            <tr>
+                <td>8</td>
+                <td>Pokémon Espada y Escudo</td>
+                <td>Grookey</td>
+                <td>Planta</td>
+                <td>Scratch, Growl, Branch Poke</td>
+                <td>Grookey (nivel 16) - Thwackey (nivel 35) - Rillaboom</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Pokémon Espada y Escudo</td>
+                <td>Scorbunny</td>
+                <td>Fuego</td>
+                <td>Ember, Growl, Quick Attack</td>
+                <td>Scorbunny (nivel 16) - Raboot (nivel 35) - Cinderace</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Pokémon Espada y Escudo</td>
+                <td>Sobble</td>
+                <td>Agua</td>
+                <td>Water Gun, Growl, Pound</td>
+                <td>Sobble (nivel 16) - Drizzile (nivel 35) - Inteleon</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    </div>
+    <div class="tab-pane" id="contacto">
+        <!-- Contenido de la sección Contacto -->
+        <!-- Agrega aquí la información de contacto -->
+    </div>
+</section>
+<aside>
+    <h2>Anuncios</h2>
+    <p>Anuncio 1: ¡formato 100% hecho por luis sierra!</p>
+    <p>Anuncio 2: ¡en caso de dudas o preguntas, escriba en google.xd!</p>
+</aside>
+<footer>
+    <p>&copy; todos los derechos de autor para mi.</p>
+</footer>
+</body>
+</html>
